@@ -1,4 +1,5 @@
 import Botao from '../components/Botao';
+import Formulario from '../components/Formulario';
 import Layout from '../components/Layout';
 import Tabela from '../components/Tabela';
 import Cliente from '../core/Cliente';
@@ -19,7 +20,7 @@ export default function Home() {
     <div
       className={`
     flex justify-center items-center h-screen
-    bg-gradient-to-r from-blue-500 to-purple-500
+    bg-gradient-to-r from-blue-500 to-blue-700
     text-white
     `}
     >
@@ -34,6 +35,7 @@ export default function Home() {
           clienteSelecionado={clienteSelecionado}
           clienteExcluido={clienteExcluido}
         />
+        <Formulario cliente={clientes[2]}></Formulario>
       </Layout>
     </div>
   );
